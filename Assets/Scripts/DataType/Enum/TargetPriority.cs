@@ -11,6 +11,10 @@ namespace EMSYS.TowerDefence
         /// <summary>
         /// 가장 체력이 많은 적 우선 타격 (진행도랑 상관 없다)
         /// </summary>
-        HealthPoint
+        HealthPoint,
+        /// <summary>
+        /// 무작위 적 타격 (진행도랑 상관 없다)
+        /// </summary>
+        Random
     }
 }

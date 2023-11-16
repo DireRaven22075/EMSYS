@@ -5,37 +5,39 @@ using UnityEngine.Pool;
 
 namespace EMSYS.TowerDefence.Unit
 {
+    [AddComponentMenu("TowerDefence/Unit/EnemyBase")]
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Enemy : MonoBehaviour
+    public class Enemy : Entity
     {
+        [Tooltip("Current Health Point")]
+        public int HP = 30;
+        [Tooltip("Max Health Point")]
+        public int MAX_HP = 30;
+        [Tooltip("Velocity")]
+        public float speed = 3;
         #region value
         public int point { get; private set; }
-        public static float speed;
-        public static float maxHealth = 30;
-        public float health;
 
         #endregion
-        public IObjectPool<GameObject> pool;
 
         private Rigidbody2D rigid;
         private void OnEnable()
         {
             rigid = GetComponent<Rigidbody2D>();
             point = 0;
-            health = maxHealth;
+            HP = MAX_HP;
             transform.position = new Vector2(-6, 6);
         }
         public void Damage(int value)
         {
-            health -= value;
+            HP -= value;
         }
         private void FixedUpdate()
         {
-            if (health <= 0) pool.Release(this.gameObject);
+            if (HP <= 0) pool.Release(this.gameObject);
         }
         void Update()
         {
-            speed = 5;
             switch (point)
             {
                 case 0: case 4: case 8:
@@ -70,8 +72,13 @@ namespace EMSYS.TowerDefence.Unit
                 case 7: if (transform.position.x == -6) point++; break;
                 case 8: if (transform.position.y == -6) point++; break;
                 case 9: if (transform.position.x == -2) point++; break;
-                case 10: if (transform.position.y == 7) pool.Release(this.gameObject); break;
+                case 10: if (transform.position.y == 7) LosePoint(); break;
             }
+        }
+        private void LosePoint()
+        {
+            pool.Release(this.gameObject);
+            
         }
     }
 }
