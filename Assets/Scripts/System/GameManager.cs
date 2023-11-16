@@ -2,17 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace EMSYS.TowerDefence.System
 {
-    // Start is called before the first frame update
-    void Start()
+    public class GameManager : MonoBehaviour
     {
-        
-    }
+        private static GameManager _instance;
+        public static GameManager instance
+        {
+            get
+            {
+                if (!_instance)
+                {
+                    _instance = GameObject.FindObjectOfType<GameManager>();
+                    if (!_instance)
+                    {
+                        GameObject obj = new GameObject("GameManager");
+                        DontDestroyOnLoad(obj);
+                        _instance = obj.GetComponent<GameManager>();
+                    }
+                }
+                return _instance;
+            }
+        }
+        private void Awake()
+        {
+            if (!_instance)
+            {
+                _instance = this;
+                DontDestroyOnLoad(this.gameObject);
+            }
+            else
+            {
+                Destroy(this.gameObject);
+            }
+        }
+        private void Start()
+        {
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        }
     }
 }

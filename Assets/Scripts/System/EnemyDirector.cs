@@ -21,26 +21,7 @@ namespace EMSYS.TowerDefence.System
         }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
-            {
-                Summon(ids[0]);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                Summon(ids[1]);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                Summon(ids[2]);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha4))
-            {
-                Summon(ids[3]);
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha5))
-            {
-                Summon(ids[4]);
-            }
+
         }
         public void Add(string id, GameObject enemy, int capacity, int maxSize)
         {
