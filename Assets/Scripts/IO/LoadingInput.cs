@@ -3,14 +3,13 @@ using EMSYS.TowerDefence.Manager;
 using TMPro;
 namespace EMSYS.TowerDefence.IO
 {
-    public class LoadingTouch : MonoBehaviour
+    public class LoadingInput : MonoBehaviour
     {
         #region variable
         private LoadingManager manager;
         #endregion
 
         #region method
-
         #endregion
 
         #region logic

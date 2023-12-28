@@ -13,20 +13,10 @@ EMSYS.TowerDefence:
             Boss : virtual
                 etc...
     IO:
-        LobbyTouch
-        LoadingTouch
-        GameTouch
-        File_Save
-        Button:
-            Btn_Start
-            Btn_Move
-            Btn_Stage
+        GameInput (Button, Touch, Slider)
+        LobbyInput (Button, Slider)
+        LoadingInput 
 
-        Slider:
-            Slider_SettingBGM
-
-        Touch:
-            
     UI:
 
     Manager:

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311924, g: 0.38073963, b: 0.3587269, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -311,8 +311,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: REWARD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -482,8 +482,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EXPLAIN
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -926,8 +926,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: TRIAL TEST
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: d228c595bbbd0d242a4e46e61c678f0d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1246,6 +1246,7 @@ GameObject:
   - component: {fileID: 1448291782}
   - component: {fileID: 1448291781}
   - component: {fileID: 1448291780}
+  - component: {fileID: 1448291783}
   m_Layer: 0
   m_Name: Game Input Module
   m_TagString: Untagged
@@ -1303,6 +1304,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1448291783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448291779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00d22bf72f56924d8c8920444fa8099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1519071978
 GameObject:
   m_ObjectHideFlags: 0

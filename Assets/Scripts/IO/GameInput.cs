@@ -6,7 +6,7 @@ using EMSYS.TowerDefence.Entity.Tower;
 namespace EMSYS.TowerDefence.IO
 {
 
-    public class GameTouch : MonoBehaviour
+    public partial class GameInput : MonoBehaviour
     {
         #region variable
         //Public

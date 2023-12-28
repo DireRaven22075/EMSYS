@@ -16,7 +16,10 @@ namespace EMSYS.TowerDefence.Entity.Tower
         #endregion
 
         #region logic
-
+        private void Awake()
+        {
+            gameObject.layer = Constants.Int.towerLayer;
+        }
         #endregion
     }
 }
