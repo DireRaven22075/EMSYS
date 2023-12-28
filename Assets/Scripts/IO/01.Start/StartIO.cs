@@ -9,32 +9,28 @@ namespace EMSYS.TowerDefence.IO
 {
     public partial class StartIO : MonoBehaviour
     {
-        private delegate void Events();
         private StartSys system;
         private StartUI ui;
-        Events events;
         private void Awake()
         {
             system = GameObject.FindObjectOfType<StartSys>();
             ui = GameObject.FindObjectOfType<StartUI>();
-            events += A;
-            events += A;
         }
         private void Start()
         {
+            if (Application.internetReachability == NetworkReachability.NotReachable)
+            {
+
+            }
             StartCoroutine(CheckVersion());
-            events.Invoke();
         }
         private void Update()
         {
+
         }
         private void LateUpdate()
         {
             
-        }
-        private void A()
-        {
-            Debug.Log("Test");
         }
     }
 }

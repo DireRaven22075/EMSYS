@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 namespace EMSYS.TowerDefence.System
 {
+    
     public class LoadingManager : MonoBehaviour
     {
         private static string nextScene = null;
@@ -31,23 +32,7 @@ namespace EMSYS.TowerDefence.System
             {
                 yield return null;
                 timer += Time.deltaTime;
-                if (operation.progress < 0.9f)
-                {
-                    progress.fillAmount = Mathf.Lerp(progress.fillAmount, operation.progress, timer);
-                    if (progress.fillAmount >= operation.progress)
-                    {
-                        timer = 0f;
-                    }
-                }
-                else
-                {
-                    progress.fillAmount = Mathf.Lerp(progress.fillAmount, 1f, timer);
-                    if (progress.fillAmount == 1.0f)
-                    {
-                        operation.allowSceneActivation = true;
-                        yield break;
-                    }
-                }
+                
             }
         }
     }

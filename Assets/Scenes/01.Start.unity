@@ -523,8 +523,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1675622791}
-        m_TargetAssemblyTypeName: EMSYS.TowerDefence.UserInput.StartInteract, Assembly-CSharp
-        m_MethodName: OnClick
+        m_TargetAssemblyTypeName: EMSYS.TowerDefence.IO.StartIO, Assembly-CSharp
+        m_MethodName: Btn_Start
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

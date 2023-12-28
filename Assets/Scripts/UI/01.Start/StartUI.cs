@@ -27,7 +27,7 @@ namespace EMSYS.TowerDefence.UI
         }
         private void Update()
         {
-
+            Debug.Log(SystemInfo.batteryLevel);
         }
     }
 }
