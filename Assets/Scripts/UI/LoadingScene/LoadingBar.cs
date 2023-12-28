@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-namespace EMSYS.TowerDefence.LoadingScene.UI
+using EMSYS.TowerDefence.Manager;
+namespace EMSYS.TowerDefence.UI
 {
     [RequireComponent(typeof(Image))]
     public class LoadingBar : MonoBehaviour

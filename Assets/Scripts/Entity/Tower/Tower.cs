@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace EMSYS.TowerDefence.Entity
+
+namespace EMSYS.TowerDefence.Entity.Tower
 {
-    [RequireComponent(typeof(Animator), typeof(BoxCollider2D))]
-    [RequireComponent(typeof(SpriteRenderer), typeof(AudioSource))]
+    [RequireComponent(typeof(TowerTransform))]
     public class Tower : MonoBehaviour
     {
         #region variable
@@ -16,29 +16,7 @@ namespace EMSYS.TowerDefence.Entity
         #endregion
 
         #region logic
-        //Init
-        private void Awake()
-        {
 
-        }
-        private void Start()
-        {
-
-        }
-        private void OnEnable()
-        {
-
-        }
-
-        //Loop
-        private void Update()
-        {
-
-        }
-        private void LateUpdate()
-        {
-
-        }
         #endregion
     }
 }

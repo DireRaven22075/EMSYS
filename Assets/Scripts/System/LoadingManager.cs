@@ -2,7 +2,7 @@ using System.Xml;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-namespace EMSYS.TowerDefence.LoadingScene
+namespace EMSYS.TowerDefence.Manager
 {
     [AddComponentMenu("TowerDefence/LoadingSceneManager")]
     public class LoadingManager : MonoBehaviour
@@ -15,7 +15,7 @@ namespace EMSYS.TowerDefence.LoadingScene
         /// <summary>
         /// 랜덤으로 생성되는 팁 텍스트입니다 (read only)
         /// </summary>
-        public string tip
+        public string tip 
         {
             get
             {
@@ -73,6 +73,7 @@ namespace EMSYS.TowerDefence.LoadingScene
             }
         }
         #endregion
+
         #region logic
         //Init
         private void Awake()
@@ -82,16 +83,6 @@ namespace EMSYS.TowerDefence.LoadingScene
         private void Start()
         {
             StartCoroutine(LoadScene());
-        }
-
-        //Loop
-        private void Update()
-        {
-            
-        }
-        private void LateUpdate()
-        {
-            
         }
         #endregion
     }

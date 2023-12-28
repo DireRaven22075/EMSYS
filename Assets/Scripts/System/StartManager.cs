@@ -1,11 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 namespace EMSYS.TowerDefence.Manager
 {
-    public class InputManager : MonoBehaviour
+    public class StartManager : MonoBehaviour
     {
+        #region variable
+
+        #endregion
+
+        #region method
+
+        #endregion
+
+        #region logic
+        //Init
         private void Awake()
         {
             
@@ -14,6 +23,8 @@ namespace EMSYS.TowerDefence.Manager
         {
             
         }
+
+        //Loop
         private void Update()
         {
             
@@ -22,6 +33,6 @@ namespace EMSYS.TowerDefence.Manager
         {
             
         }
+        #endregion
     }
-    public delegate void Observer(string msg);
 }

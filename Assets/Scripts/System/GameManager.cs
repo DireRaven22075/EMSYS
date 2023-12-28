@@ -1,16 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-namespace EMSYS.TowerDefence.StartScene
+
+namespace EMSYS.TowerDefence.Manager
 {
-    public class StartManager : MonoBehaviour
+    [AddComponentMenu("TowerDefence/GameSceneManager")]
+    public partial class GameManager : MonoBehaviour
     {
         #region variable
-
+        public int coin { get; private set; }
         #endregion
 
         #region method
-
+        public bool AbleToBuy(int value)
+        {
+            return coin >= value;
+        }
         #endregion
 
         #region logic
@@ -33,6 +38,7 @@ namespace EMSYS.TowerDefence.StartScene
         {
             
         }
+
         #endregion
     }
 }

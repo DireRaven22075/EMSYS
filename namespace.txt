@@ -1,0 +1,37 @@
+EMSYS.TowerDefence:
+    Entity:
+        Tower:
+            Tower : virtual
+                Attack
+                Support
+                Special
+            TowerTransform
+
+        Enemy:
+            Enemy : virtual
+                etc....
+            Boss : virtual
+                etc...
+    IO:
+        LobbyTouch
+        LoadingTouch
+        GameTouch
+        File_Save
+        Button:
+            Btn_Start
+            Btn_Move
+            Btn_Stage
+
+        Slider:
+            Slider_SettingBGM
+
+        Touch:
+            
+    UI:
+
+    Manager:
+        LoadingManager
+        GameManager
+        LobbyManager
+        StartManager
+    
