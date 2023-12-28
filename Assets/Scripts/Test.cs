@@ -10,7 +10,6 @@ public class Test : MonoBehaviour
 {
     #region variable
     //Public
-
     //Private
     private TowerTransform tower;
     private Camera camera;
