@@ -78,7 +78,6 @@ public class Test : MonoBehaviour
     }
     private GameObject GetObject(Ray2D ray, int layer = -1)
     {
-        GameObject result = null;
         int mask = 1 << layer;
         RaycastHit2D hit;
         hit = layer == -1 ? Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity) : Physics2D.Raycast(ray.origin, ray.direction, Mathf.Infinity, mask);

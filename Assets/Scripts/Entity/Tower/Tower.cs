@@ -4,7 +4,9 @@ using UnityEngine;
 
 namespace EMSYS.TowerDefence.Entity.Tower
 {
-    [RequireComponent(typeof(TowerTransform))]
+    [RequireComponent(typeof(TowerInfo))]
+    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(Animator))]
     public class Tower : MonoBehaviour
     {
         #region variable
