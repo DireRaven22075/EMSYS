@@ -24,10 +24,12 @@ namespace EMSYS.TowerDefence.UI
         }
         #endregion
 
+        #region logic
         void Start()
         {
             component = GetComponent<Canvas>();
             GameObject.FindObjectOfType<GameManager>().observer += Alert;
         }
+        #endregion
     }
 }
