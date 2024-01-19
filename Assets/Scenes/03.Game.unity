@@ -993,6 +993,7 @@ GameObject:
   - component: {fileID: 693158713}
   - component: {fileID: 693158718}
   - component: {fileID: 693158717}
+  - component: {fileID: 693158719}
   m_Layer: 5
   m_Name: Game Quest Canvas
   m_TagString: Untagged
@@ -1121,6 +1122,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693158712}
   m_CullTransparentMesh: 1
+--- !u!114 &693158719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693158712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00804385b7d6442eae99cc5d55a4215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &713427898
 GameObject:
   m_ObjectHideFlags: 0
